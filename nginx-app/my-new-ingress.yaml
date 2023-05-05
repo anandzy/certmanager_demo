@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-new-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: acme-issuer
+spec:
+  tls:
+  - secretName: hello
+    hosts:
+    - shop.anand.contact
+    - blog.anand.contact
+  rules:
+  - host: blog.anand.contact
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: hello-one
+            port:
+              number: 80
+  - host: shop.anand.contact
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: hello-two
+            port:
+              number: 80
