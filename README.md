@@ -32,7 +32,6 @@ You can troubleshoot issues and inspect log entries for the Certificate Objects 
 [Official Cert-Manager Documentation](https://cert-manager.io/docs/)
 
 <picture>
-    <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="doc/images/flow_diagram.png">
-
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="doc/images/flow_diagram.png">
   <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="doc/images/dns_cloud.png">
 </picture>
