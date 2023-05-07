@@ -43,4 +43,4 @@ jobs:
 # list the namespace on the k8s cluster, manifest is already applied
       - uses: k8s-actions/kubectl@master
         with:
-          args: get namespace
+          args: kubectl get namespace
