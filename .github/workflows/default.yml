@@ -37,10 +37,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.
-
-
-# list the namespace on the k8s cluster, manifest is already applied
-      - uses: k8s-actions/kubectl@master
-        with:
-          args: kubectl get namespace
+          kubectl get pods
